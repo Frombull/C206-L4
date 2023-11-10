@@ -1,0 +1,27 @@
+package Projeto_C206;
+
+class PokemanoCapturado extends Pokemano {
+    private String pokebola;
+    private String nomeTreinador;
+
+    public PokemanoCapturado(String nome, String tipo, int idade, String pokebola, String nomeTreinador) {
+        super(nome, tipo, idade);
+        this.pokebola = pokebola;
+        this.nomeTreinador = nomeTreinador;
+    }
+
+    @Override
+    public void mostrarInfos(){
+        super.mostrarInfos();
+        System.out.println(" | Pokebola: " + this.pokebola + " | Treinador: " + this.nomeTreinador);
+    }
+
+
+    // Getters & Setters
+    public String getPokebola() {
+        return pokebola;
+    }
+    public String getNomeTreinador() {
+        return nomeTreinador;
+    }
+}
