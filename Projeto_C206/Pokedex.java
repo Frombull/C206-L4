@@ -4,6 +4,7 @@ import java.util.ArrayList;
 class Pokedex {
     private ArrayList<PokemanoCapturado> pokemanos;
 
+    // Constructor
     public Pokedex(){
         pokemanos = Arquivo.ler();
     }
@@ -46,24 +47,21 @@ class Pokedex {
     public void listarPokemanos(){
         pokemanos = Arquivo.ler();
 
-        if(pokemanos.isEmpty())
+        if(pokemanos.isEmpty()){
             System.out.println("| Pokedex vazia");
+            return;
+        }
 
         System.out.println("Lista de pokemanos:");
-        System.out.println("--------------------");
         for (PokemanoCapturado p : pokemanos) {
             p.mostrarInfos();
         }
-        System.out.println("--------------------\n");
+        System.out.println();
     }
 
 
     // Getters & Setters
     public ArrayList<PokemanoCapturado> getPokemons() {
         return pokemanos;
-    }
-
-    public void setPokemons(ArrayList<PokemanoCapturado> pokemanos) {
-        this.pokemanos = pokemanos;
     }
 }
