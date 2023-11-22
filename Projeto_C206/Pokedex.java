@@ -32,10 +32,8 @@ class Pokedex {
         }
 
         if(!foundAny){
-            System.out.println("| Nenhum pokemano desse tipo na pokedex");
+            System.out.println("| Nenhum pokemano desse tipo na pokedex!\n");
         }
-        
-        System.out.println();
     }
 
     public void listarPokemanos() {
@@ -59,7 +57,7 @@ class Pokedex {
 
 
     // Getters & Setters
-    public ArrayList<PokemanoCapturado> getPokemons() {
+    public ArrayList<PokemanoCapturado> getPokemanos() {
         return pokemanos;
     }
 }
