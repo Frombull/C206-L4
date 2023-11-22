@@ -20,9 +20,10 @@ class Pokedex {
     }
     
     public void procurarPorTipo(String tipo) {
+        tipo = tipo.trim();
         System.out.println("Pokemanos do tipo " + tipo + ": ");
-        boolean foundAny = false;
         
+        boolean foundAny = false;
         for (PokemanoCapturado p : pokemanos) {
             if (p.getTipo().equalsIgnoreCase(tipo)) {
                 foundAny = true;
