@@ -9,7 +9,7 @@ public class Main {
         boolean running = true;
 
         // Comecando com alguns pokemons iniciais na pokedex
-        if(pokedex.getPokemons().isEmpty()) {
+        if(pokedex.getPokemanos().isEmpty()) {
             pokedex.adicionarPokemano(new PokemanoCapturado("Charmano", "Fogo", 1, "Normal", "Marco"));
             pokedex.adicionarPokemano(new PokemanoCapturado("Boobasauro", "Agua", 2, "Normal", "Marco"));
             pokedex.adicionarPokemano(new PokemanoCapturado("Pikachuchu", "Eletrico", 3, "Ultraball", "Vinicius"));
