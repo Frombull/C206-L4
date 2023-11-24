@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.io.*;
 
 public abstract class Arquivo {
-    private static String fileName = "pokemanos.txt";
-    private static String filePath = System.getProperty("user.dir") + "/" + fileName;
+    private static String fileName;
+    private static String filePath;
 
 
     // Adiciona um pokemano a pokedex (CREATE)
@@ -84,7 +84,10 @@ public abstract class Arquivo {
             }
         }
         catch (Exception e) {
-            System.out.println("ERRO: " + e);
+            if(fileName == null) {
+                System.out.println(fileName);
+                System.out.println("ERRO: " + e);
+            }
         } 
         finally {
             try {
@@ -98,22 +101,22 @@ public abstract class Arquivo {
         return encontreiOPokemano;
     }
 
-    // Procura por um pokemano e muda o nome de seu treinador (UPDATE)
-    public static void updateTreinador(String nomePokemon, String nomeTreinadorNovo) {
+    // Procura por um pokemano e muda o seu nome (UPDATE)
+    public static void updateNome(String nomeAntigo, String nomeNovo) {
         ArrayList<PokemanoCapturado> pokemanos = ler();
 
         boolean found = false;
         Iterator<PokemanoCapturado> iterator = pokemanos.iterator();
         while (iterator.hasNext()) {
             PokemanoCapturado p = iterator.next();
-            if (p.getNome().equalsIgnoreCase(nomePokemon)) {
+            if (p.getNome().equalsIgnoreCase(nomeAntigo)) {
                 found = true;
-                p.setNomeTreinador(nomeTreinadorNovo);
+                p.setNome(nomeNovo);
             }
         }
 
         if(!found){
-            System.out.println("[" + nomePokemon + "] nao encontrado na pokedex\n");
+            System.out.println("[" + nomeAntigo + "] nao encontrado na pokedex\n");
             return;
         }
 
@@ -122,7 +125,7 @@ public abstract class Arquivo {
             escrever(p);
         }
 
-        System.out.println("\n" + nomeTreinadorNovo + " agora e o novo treinador de [" + nomePokemon + "]!\n");
+        System.out.println("\n[" + nomeAntigo + "] agora se chama: [" + nomeNovo + "]!\n");
     }
 
     // Procura um pokemano por nome e remove o mesmo da pokedex (DELETE)
@@ -159,5 +162,12 @@ public abstract class Arquivo {
         } catch (IOException e) {
             System.out.println("ERRO: " + e);
         }
+    }
+
+
+    // Getters & Setters
+    public static void setFileName(String fileName) {
+        Arquivo.fileName = fileName;
+        filePath = System.getProperty("user.dir") + "/" + fileName;
     }
 }
