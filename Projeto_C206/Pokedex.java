@@ -3,16 +3,19 @@ import java.util.ArrayList;
 
 class Pokedex {
     private ArrayList<PokemanoCapturado> pokemanos;
+    private Treinador treinador;
 
 
     // Constructor
-    public Pokedex() {
+    public Pokedex(Treinador treinador) {
+        Arquivo.setFileName("pokemanos_" + treinador.getNome().toLowerCase() + ".txt");
+        this.treinador = treinador;
         pokemanos = Arquivo.ler();
     }
 
     public void adicionarPokemano(PokemanoCapturado pokemano) {
         Arquivo.escrever(pokemano);
-        System.out.println("[" + pokemano.getNome() + "] adicionado a pokedex!\n");
+        System.out.println("[" + pokemano.getNome() + "] adicionado a pokedex de " + treinador.getNome());
     }
 
     public void removerPokemano(String nomeRemover) {
@@ -32,7 +35,8 @@ class Pokedex {
         }
 
         if(!foundAny){
-            System.out.println("| Nenhum pokemano desse tipo na pokedex!\n");
+            System.out.println("| Nenhum pokemano desse tipo na pokedex de " + treinador.getNome());
+            System.out.println();
         }
     }
 
@@ -51,8 +55,12 @@ class Pokedex {
         System.out.println();
     }
 
-    public void trocarTreinador(String nomePokemano, String nomeTreinadorNovo) {
-        Arquivo.updateTreinador(nomePokemano, nomeTreinadorNovo);
+    public void trocarNomePokemano(String nomeAtual, String nomeNovo) {
+        Arquivo.updateNome(nomeAtual, nomeNovo);
+    }
+
+    public void limparPokedex() {
+        Arquivo.limpar();
     }
 
 
