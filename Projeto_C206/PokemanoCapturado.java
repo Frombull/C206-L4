@@ -31,7 +31,7 @@ class PokemanoCapturado extends Pokemano {
     public String getNomeTreinador() {
         return nomeTreinador;
     }
-    public void setNomeTreinador(String nome) {
-        this.nomeTreinador = nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
