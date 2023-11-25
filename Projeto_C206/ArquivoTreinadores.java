@@ -121,7 +121,7 @@ public abstract class ArquivoTreinadores {
 
         renomearArquivo("pokemanos_" + nomeAntigo.toLowerCase() + ".txt", "pokemanos_" + nomeNovo.toLowerCase() + ".txt");
 
-        System.out.println("\n" + nomeAntigo + " agora se chama: " + nomeNovo + "!\n");
+        System.out.println("\n" + nomeAntigo + " agora se chama " + nomeNovo + "!\n");
     }
 
     // Procura um treinador por nome e remove o mesmo (DELETE)
