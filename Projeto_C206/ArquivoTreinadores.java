@@ -148,6 +148,9 @@ public abstract class ArquivoTreinadores {
             escrever(t);
         }
 
+
+        deletarArquivo(System.getProperty("user.dir") + "/pokemanos_" + nomeRemover.toLowerCase() + ".txt");
+
         System.out.println("" + nomeRemover + " removido\n");
     }
 
@@ -191,4 +194,15 @@ public abstract class ArquivoTreinadores {
         // Arquivo nao encontrado
         return false;        
     }
+
+    public static void deletarArquivo(String nomeArquivo) {
+        File arquivoParaDeletar = new File(nomeArquivo);
+
+        if (arquivoParaDeletar.exists()) {
+            arquivoParaDeletar.delete();
+        } else {
+            System.out.println("ERRO: O arquivo não existe.");
+        }
+    }
+
 }
