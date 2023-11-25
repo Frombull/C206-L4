@@ -1,38 +1,71 @@
 package Projeto_C206;
+import java.util.ArrayList;
 
-public class Treinador {
-    private String nome;
-    private int pokebolas;
-    private Pokedex pokedex;
+class Pokedex {
+    private ArrayList<PokemanoCapturado> pokemanos;
+    private Treinador treinador;
 
 
-    public Treinador(String nome, int pokebolas) {
-        this.nome = nome;
-        this.pokebolas = pokebolas;
-        pokedex = new Pokedex(this);
+    // Constructor
+    public Pokedex(Treinador treinador) {
+        Arquivo.setFileName("pokemanos_" + treinador.getNome().toLowerCase() + ".txt");
+        this.treinador = treinador;
+        pokemanos = Arquivo.ler();
+    }
 
-        // Comecando com alguns pokemanos iniciais na pokedex
-        if(pokedex.getPokemanos().isEmpty()) {
-            pokedex.adicionarPokemano(new PokemanoCapturado("Charmano", "Fogo", 1, "Normal", "Marco"));
-            pokedex.adicionarPokemano(new PokemanoCapturado("Boobasauro", "Agua", 2, "Normal", "Marco"));
-            pokedex.adicionarPokemano(new PokemanoCapturado("Pikachuchu", "Eletrico", 3, "Ultraball", "Vinicius"));
-        }
+    public void adicionarPokemano(PokemanoCapturado pokemano) {
+        Arquivo.escrever(pokemano);
+        System.out.println("[" + pokemano.getNome() + "] adicionado a pokedex de " + treinador.getNome());
+    }
+
+    public void removerPokemano(String nomeRemover) {
+        Arquivo.deletarPokemano(nomeRemover);
     }
     
+    public void procurarPorTipo(String tipo) {
+        tipo = tipo.trim();
+        System.out.println("Pokemanos do tipo " + tipo + ": ");
+        
+        boolean foundAny = false;
+        for (PokemanoCapturado p : pokemanos) {
+            if (p.getTipo().equalsIgnoreCase(tipo)) {
+                foundAny = true;
+                p.mostrarInfos();
+            }
+        }
+
+        if(!foundAny){
+            System.out.println("| Nenhum pokemano desse tipo na pokedex de " + treinador.getNome());
+            System.out.println();
+        }
+    }
+
+    public void listarPokemanos() {
+        pokemanos = Arquivo.ler();
+
+        if(pokemanos.isEmpty()){
+            System.out.println("| Pokedex vazia!\n");
+            return;
+        }
+
+        System.out.println("Lista de pokemanos:");
+        for (PokemanoCapturado p : pokemanos) {
+            p.mostrarInfos();
+        }
+        System.out.println();
+    }
+
+    public void trocarNomePokemano(String nomeAtual, String nomeNovo) {
+        Arquivo.updateNome(nomeAtual, nomeNovo);
+    }
+
+    public void limparPokedex() {
+        Arquivo.limpar();
+    }
+
 
     // Getters & Setters
-    public String getNome() {
-        return this.nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Pokedex getPokedex() {
-        return this.pokedex;
-    }
-
-    public int getPokebolas(){
-        return this.pokebolas;
+    public ArrayList<PokemanoCapturado> getPokemanos() {
+        return pokemanos;
     }
 }
