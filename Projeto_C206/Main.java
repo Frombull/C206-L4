@@ -50,6 +50,9 @@ public class Main {
             // Selecionando o arquivo '.txt' do treinador selecionado
             Arquivo.setFileName("pokemanos_" + treinadorSelecionado.getNome().toLowerCase() + ".txt");
 
+            // Atualizando lista de treinadores disponivel
+            treinadores = ArquivoTreinadores.ler();
+
             // Menu
             System.out.println("---------- Menu ----------");
             System.out.println("1. Adicionar pokemano");
@@ -57,11 +60,12 @@ public class Main {
             System.out.println("3. Listar pokemanos");
             System.out.println("4. Trocar nome de pokemano");
             System.out.println("5. Remover pokemano");
-            System.out.println("6. Adicionar treinador");
-            System.out.println("7. Trocar nome de treinador");
-            System.out.println("8. Selecionar outro treinador");
-            System.out.println("9. Limpar pokedex");
-            System.out.println("10. Sair");
+            System.out.println("6. Limpar pokedex");
+            System.out.println("7. Adicionar treinador");
+            System.out.println("8. Trocar nome de treinador");
+            System.out.println("9. Selecionar outro treinador");
+            System.out.println("10. Remover treinador");
+            System.out.println("11. Sair");
             System.out.println("--------------------------\n");
             System.out.print("-> ");
 
@@ -126,6 +130,25 @@ public class Main {
                     pokedex.removerPokemano(nomeRemover);
                     break;
                 case 6:
+                    while (true) {
+                        System.out.print("-> Tem certeza que deseja deletar todos os seus pokemanos? (sim/nao): ");
+                
+                        String resposta = scanner.nextLine().toLowerCase();
+                
+                        if (resposta.equals("sim") || resposta.equals("s")) {
+                            pokedex.limparPokedex();
+                            System.out.println("Pokemanos de " + treinadorSelecionado.getNome() + " deletados com sucesso!\n");
+                            break;
+                        } else if (resposta.equals("nao") || resposta.equals("n")) {
+                            System.out.println("Cancelado!\n");
+                            break;
+                        } else {
+                            continue;
+                        }
+                    }
+
+                    break;
+                case 7:
                     System.out.print("-> Nome do novo treinador: ");
                     String nomeNovoTreinador = scanner.nextLine().trim();
 
@@ -144,14 +167,14 @@ public class Main {
 
                     System.out.println(nomeNovoTreinador + " adicionado com sucesso!\n");
                     break;
-                case 7:
+                case 8:
                     System.out.print("-> Nome atual do treinador: ");
                     String nomeTreinadorAtual = scanner.nextLine();
                     System.out.print("-> Novo nome do treinador: ");
                     String nomeTreinadorNovo = scanner.nextLine();
                     ArquivoTreinadores.updateNome(nomeTreinadorAtual, nomeTreinadorNovo);
                     break;
-                case 8:
+                case 9:
                     treinadorSelecionado = null;
 
                     while(treinadorSelecionado == null) {
@@ -174,26 +197,29 @@ public class Main {
                         }
                     }
                     break;
-                case 9:
-                    while (true) {
-                        System.out.print("-> Tem certeza que deseja deletar todos os seus pokemanos? (sim/nao): ");
-                
-                        String resposta = scanner.nextLine().toLowerCase();
-                
-                        if (resposta.equals("sim") || resposta.equals("s")) {
-                            pokedex.limparPokedex();
-                            System.out.println("Pokemanos de " + treinadorSelecionado.getNome() + " deletados com sucesso!\n");
-                            break;
-                        } else if (resposta.equals("nao") || resposta.equals("n")) {
-                            System.out.println("Cancelado!\n");
-                            break;
-                        } else {
-                            continue;
+                case 10:
+                if(ArquivoTreinadores.ler().size() <= 1){
+                    System.out.println("Nao ha treinadores para serem removidos");
+                    break;
+                }
+
+                String nomeARemover;
+                while (true) {
+                        for (Treinador treinador : treinadores) {
+                            System.out.println("| " + treinador.getNome());
                         }
+                        System.out.print("-> Nome do treinador para ser removido: ");
+                        nomeARemover = scanner.nextLine();
+                        if(treinadorSelecionado.getNome().equalsIgnoreCase(nomeARemover))
+                            System.out.println("Nao pode remover o treinador atualmente selecionado");
+                        else
+                            break;
                     }
 
+                    ArquivoTreinadores.deletarTreinador(nomeARemover);
+
                     break;
-                case 10:
+                case 11:
                     while (true) {
                         System.out.print("-> Ja vai? (sim/nao): ");
                         String resposta = scanner.nextLine().toLowerCase();
