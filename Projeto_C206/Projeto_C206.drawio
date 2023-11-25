@@ -1,0 +1,231 @@
+<mxfile host="app.diagrams.net" modified="2023-11-25T01:33:13.325Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="CSX5ONeyO3GqeBfYfiEI" version="22.1.4" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2817" dy="2263" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=12;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--6" target="X-OAIilBKTXiHBOLs_XP-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="Pokedex" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="124.63" y="-390" width="383.58" height="242" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--7" value="- ArrayList&lt;&gt;: PokemanoCapturado" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="26" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="52" width="383.58" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--10" value="+ Pokedex(Treinador treinador): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="60" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--11" value="+ adicionarPokemano(PokemanoCapturado pokemano): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="86" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-26" value="+ removerPokemano(String nomeRemover): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="112" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-27" value="+ procurarPorTipo(String tipo): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="138" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-28" value="+ listarPokemanos(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="164" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-25" value="+ trocarNomePokemano(String nomeAtual, String nomeNovo): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
+          <mxGeometry y="190" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-13" value="+ limparPokedex(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--6">
+          <mxGeometry y="216" width="383.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-0" value="Pokemano" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-50" y="-91" width="180" height="201" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-1" value="# nome: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-2" value="# tipo: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="52" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-5" value="# idade: Int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="78" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kwqF7Vy4snSURN3iqf_3-1" value="# xp: Int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="104" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="130" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kwqF7Vy4snSURN3iqf_3-2" value="+ Pokemano(String nome,&#xa;   String tipo, int idade): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="138" width="180" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-29" value="+ mostrarInfos(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-0" vertex="1">
+          <mxGeometry y="170" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;endSize=12;entryX=0.499;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="y7DDbX3QDfbF-vgsd9Lt-6" target="X-OAIilBKTXiHBOLs_XP-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="316" y="-140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-6" value="PokemanoCapturado" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="211.42" y="-74" width="210" height="170" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-7" value="- pokebola: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-6" vertex="1">
+          <mxGeometry y="26" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-8" value="- nomeTreinador: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="y7DDbX3QDfbF-vgsd9Lt-6" vertex="1">
+          <mxGeometry y="52" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-6" vertex="1">
+          <mxGeometry y="78" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-11" value="+ mostrarInfos(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-6" vertex="1">
+          <mxGeometry y="86" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-10" value="+ PokemanoCapturado(String nome,&#xa; String tipo, int idade, String pokebola,&#xa; String nomeTreinador): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-6" vertex="1">
+          <mxGeometry y="112" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-18" value="Arquivo" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="580" y="-415" width="380" height="216" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-21" value="- fileName: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="26" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-22" value="- filePath: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="52" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-20" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="78" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-19" value="+ escrever(Pokemano pokemano): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="86" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-20" value="+ ler(): ArrayList&lt;PokemanoCapturado&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="112" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="el7t7h7sBX-KbghAqR7d-1" value="+ updateNome(String nomeAntigo, String nomeNovo): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="138" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="el7t7h7sBX-KbghAqR7d-0" value="+ deletarPokemano(String nomeRemover): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="164" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-23" value="+ limpar(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" parent="y7DDbX3QDfbF-vgsd9Lt-18" vertex="1">
+          <mxGeometry y="190" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-30" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Evolucao" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-277.84000000000003" y="-17.180000000000014" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-13" value="+ evoluir(int xp): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-277.84" y="12.82" width="149.58" height="23.17" as="geometry" />
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-31" value="" style="endArrow=none;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-277.84" y="35.99" as="sourcePoint" />
+            <mxPoint x="-277.8400000000001" y="12.81999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-32" value="" style="endArrow=none;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-127.84" y="35.99" as="sourcePoint" />
+            <mxPoint x="-127.83999999999995" y="10.81999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7DDbX3QDfbF-vgsd9Lt-33" value="" style="endArrow=none;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-277.8400000000001" y="35.98999999999993" as="sourcePoint" />
+            <mxPoint x="-127.84000000000006" y="35.98999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03nTHQ6a08Ar9HNG_nsw-9" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;entryX=-0.012;entryY=0.845;entryDx=0;entryDy=0;entryPerimeter=0;endSize=10;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-127.84" y="9.440000000000001" as="sourcePoint" />
+            <mxPoint x="-49.99999999999986" y="8.9899999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="03nTHQ6a08Ar9HNG_nsw-40" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="321.4200000000001" y="-148" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="03nTHQ6a08Ar9HNG_nsw-41" value="1..*&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="321.4200000000001" y="-104" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T8ImiJIvvNks8Nwd6ZSA-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=11;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="9.48" as="sourcePoint" />
+            <mxPoint x="210" y="9.48" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="9.48" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-0" value="ArquivoTreinadores" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="580" y="-158" width="381.79" height="268" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-1" value="- fileName: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="26" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-2" value="- filePath: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="52" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="78" width="381.79" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-4" value="+ escrever(Treinador treinador): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="86" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-5" value="+ ler(): ArrayList&lt;Treinador&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="112" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-9" value="+ updateNome(String nomeAntigo, String nomeNovo): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="138" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-6" value="+ deletarTreinador(String nomeRemover): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="164" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-7" value="+ limpar(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="190" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-10" value="+ renomearArquivo(String nomeAntigo, String nomeNovo): boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="216" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-11" value="+ deletarArquivo(String nomeArquivo): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=0" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-0">
+          <mxGeometry y="242" width="381.79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-14" value="Treinador" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="172.29000000000002" y="-600" width="288.26" height="144" as="geometry">
+            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-15" value="# nome: String" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-14">
+          <mxGeometry y="26" width="288.26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-16" value="# pokebolas: Int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-14">
+          <mxGeometry y="52" width="288.26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-18" value="# pokedex: Pokedex" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-14">
+          <mxGeometry y="78" width="288.26" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-19" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-14">
+          <mxGeometry y="104" width="288.26" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-20" value="+ Treinador(String nome, int pokebolas): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="X-OAIilBKTXiHBOLs_XP-14">
+          <mxGeometry y="112" width="288.26" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-25" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="321.42" y="-456" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OAIilBKTXiHBOLs_XP-26" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="321.42" y="-420" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
