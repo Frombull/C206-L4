@@ -125,7 +125,7 @@ public abstract class Arquivo {
             escrever(p);
         }
 
-        System.out.println("\n[" + nomeAntigo + "] agora se chama: [" + nomeNovo + "]!\n");
+        System.out.println("\n[" + nomeAntigo + "] agora se chama [" + nomeNovo + "]!\n");
     }
 
     // Procura um pokemano por nome e remove o mesmo da pokedex (DELETE)
