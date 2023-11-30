@@ -1,7 +1,7 @@
-package Projeto_C206;
+package Projeto_C206.src;
 import java.util.ArrayList;
 
-class Pokedex {
+public class Pokedex {
     private ArrayList<PokemanoCapturado> pokemanos;
     private Treinador treinador;
 
