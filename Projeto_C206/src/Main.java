@@ -1,10 +1,9 @@
-package Projeto_C206;
-
+package Projeto_C206.src;
 import java.util.Scanner;
 
 public class Main {
     // Variaveis de classe
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
     private static Pokedex pokedex;
     private static Treinador treinadorSelecionado;
 
@@ -119,8 +118,7 @@ public class Main {
         System.out.print("-> Pokebola: ");
         String pokebola = scanner.nextLine();
 
-        System.out.print("-> Nome do Treinador: ");
-        String nomeTreinador = scanner.nextLine();
+        String nomeTreinador = treinadorSelecionado.getNome();
 
         PokemanoCapturado novopokemano = new PokemanoCapturado(nome, tipo, idade, pokebola, nomeTreinador);
         pokedex.adicionarPokemano(novopokemano);
@@ -165,8 +163,6 @@ public class Main {
             } else if (resposta.equals("nao") || resposta.equals("n")) {
                 System.out.println("Cancelado!\n");
                 break;
-            } else {
-                continue;
             }
         }
     }
