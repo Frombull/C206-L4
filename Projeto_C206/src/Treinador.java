@@ -1,4 +1,4 @@
-package Projeto_C206;
+package Projeto_C206.src;
 
 public class Treinador {
     private String nome;
@@ -27,11 +27,9 @@ public class Treinador {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
     public Pokedex getPokedex() {
         return this.pokedex;
     }
-
     public int getPokebolas(){
         return this.pokebolas;
     }
