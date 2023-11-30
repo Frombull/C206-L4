@@ -1,4 +1,4 @@
-package Projeto_C206;
+package Projeto_C206.src;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,8 +11,8 @@ public abstract class Arquivo {
 
     // Adiciona um pokemano a pokedex (CREATE)
     public static void escrever(Pokemano pokemano) {
-        OutputStream os = null;
-        OutputStreamWriter osw = null;
+        OutputStream os;
+        OutputStreamWriter osw;
         BufferedWriter bw = null;
 
         try {
@@ -49,8 +49,8 @@ public abstract class Arquivo {
         // ArrayList auxiliar para salvar dados encontrados no arquivo
         ArrayList<PokemanoCapturado> encontreiOPokemano = new ArrayList<>();
         
-        InputStream is = null;
-        InputStreamReader isr = null;
+        InputStream is;
+        InputStreamReader isr;
         BufferedReader br = null;
 
         // Variável auxiliar que servira de flag para o while 
@@ -85,7 +85,6 @@ public abstract class Arquivo {
         }
         catch (Exception e) {
             if(fileName == null) {
-                System.out.println(fileName);
                 System.out.println("ERRO: " + e);
             }
         } 
@@ -106,9 +105,7 @@ public abstract class Arquivo {
         ArrayList<PokemanoCapturado> pokemanos = ler();
 
         boolean found = false;
-        Iterator<PokemanoCapturado> iterator = pokemanos.iterator();
-        while (iterator.hasNext()) {
-            PokemanoCapturado p = iterator.next();
+        for (PokemanoCapturado p : pokemanos) {
             if (p.getNome().equalsIgnoreCase(nomeAntigo)) {
                 found = true;
                 p.setNome(nomeNovo);
