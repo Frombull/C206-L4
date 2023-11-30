@@ -1,4 +1,4 @@
-package Projeto_C206;
+package Projeto_C206.src;
 
 class Pokemano implements Evolucao {
     protected String nome;
@@ -7,6 +7,7 @@ class Pokemano implements Evolucao {
     protected int xp;
 
 
+    // Constructor
     public Pokemano(String nome, String tipo, int idade) {
         this.nome = nome;
         this.tipo = tipo;
@@ -21,6 +22,7 @@ class Pokemano implements Evolucao {
     public void evoluir(int xp) {
         if(xp > 1_000) {
             System.out.println("[" + this.getNome() + "] acabou de evoluir!");
+            this.xp -= 1_000;
         } else {
             System.out.println("[" + this.getNome() + "] ainda não tem xp suficiente para evoluir!");
         }
