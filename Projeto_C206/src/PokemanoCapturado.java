@@ -1,6 +1,6 @@
-package Projeto_C206;
+package Projeto_C206.src;
 
-class PokemanoCapturado extends Pokemano {
+public class PokemanoCapturado extends Pokemano {
     private String pokebola;
     private String nomeTreinador;
 
