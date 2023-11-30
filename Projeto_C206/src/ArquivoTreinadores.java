@@ -1,13 +1,14 @@
-package Projeto_C206;
+package Projeto_C206.src;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public abstract class ArquivoTreinadores {
     private static String fileName = "treinadores.txt";
     private static String filePath = System.getProperty("user.dir") + "/" + fileName;
-
+    
 
     // Adiciona um treinador (CREATE)
     public static void escrever(Treinador treinador) {
@@ -45,7 +46,6 @@ public abstract class ArquivoTreinadores {
     public static ArrayList<Treinador> ler() {
         // ArrayList auxiliar para salvar dados encontrados no arquivo
         ArrayList<Treinador> encontrei = new ArrayList<>();
-        
         InputStream is = null;
         InputStreamReader isr = null;
         BufferedReader br = null;
@@ -55,7 +55,7 @@ public abstract class ArquivoTreinadores {
 
         try {
             is = new FileInputStream(filePath);
-            isr = new InputStreamReader(is);
+            isr = new InputStreamReader(is, StandardCharsets.UTF_8);
             br = new BufferedReader(isr);
 
             // Colocando o cursor no inicio do arquivo
